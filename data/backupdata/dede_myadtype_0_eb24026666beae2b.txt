@@ -1,0 +1,4 @@
+INSERT INTO `dede_myadtype` VALUES('1','轮播图');
+INSERT INTO `dede_myadtype` VALUES('2','亚洲珠宝创始人');
+INSERT INTO `dede_myadtype` VALUES('3','证书管理');
+INSERT INTO `dede_myadtype` VALUES('4','留言页面广告');

@@ -1,0 +1,46 @@
+.contains{width: 100%;color: #ffffff;}
+
+.contains .banner{position: relative;width: 100%;overflow: hidden;height: 278px;}
+.contains .banner img{width: 1920px;display: block;position: absolute;left: 50%;margin-left: -960px;}
+
+.message{width: 100%;}
+.message .content{margin: 80px auto 120px;}
+.message .myForm{float: left;width: 710px;}
+.message .myForm h1{font-size: 24px;line-height: 56px;}
+.message .myForm h1 em{color: #e3b845;padding-right: 22px;}
+.message .myForm h1 b{display: block;width: 120px;height: 2px;background: #e3b845;}
+.message .myForm p{font-size: 16px;padding: 20px 0 70px;}
+.message .myForm form,.message .myForm label,.message .myForm span,.message .myForm input,.message .myForm textarea{display: block;}
+.message .myForm form label{margin-bottom: 26px;float: left;position: relative;}
+.message .myForm form label:nth-child(2){margin-left: 46px;}
+.message .myForm form label:nth-child(3){float: none;}
+.marmess .myForm form label span{font-size: 12px;line-height: 26px;}
+.message .myForm form label input{width: 330px;height: 38px;line-height: 38px;color: #070707;text-indent: 16px;background: #ffffff;outline: none;border-radius: 2px;border: 1px solid #ffffff;}
+.message .myForm form label i{color: #ff0000;font-size: 12px;position: absolute;left: 0;top: 70px;z-index: 100;display: none;}
+.message .myForm form label input:focus{border-color: #80ddff;}
+.message .myForm form label input.on{border-color: #ff0000;}
+.message .myForm form label textarea{width: 698px;height: 118px;padding: 0 6px;background: #ffffff;outline: none;border: none;border-radius: 4px;resize: none;}   
+.message .myForm form .subBtn{width: 330px;height: 40px;line-height: 40px;font-size: 16px;color: #ffffff;border-radius: 4px;background: #e3b845;text-align: center;outline: none;border: none;cursor: pointer;}
+
+.message .picShow{float: right;width: 350px;height: 469px;overflow: hidden;position: relative;}
+.message .picShow ul,.message .picShow ul li{width: 100%;height: 469px;position: absolute;left: 0;top: 0;}
+.message .picShow ul li{overflow: hidden;}
+.message .picShow ul li a{display: block;}
+.message .picShow .button{width: 153px;height: 42px;line-height: 42px;background: #100103;position: absolute;right: 10px;bottom: 10px;z-index: 100;padding-left: 5px;}
+.message .picShow .button>a{float: left;display: block;}
+.message .picShow .button .imageBtn{width: 100px;height: 31px;overflow: hidden;float: left;margin: 5px 11px;}
+.message .picShow .button .imageBtn ol{margin-right: -4px;}
+.message .picShow .button .imageBtn ol li{width: 42px;height: 25px;border: 3px solid #666666;margin-right: 4px;overflow: hidden;cursor: pointer;float: left;}
+.message .picShow .button .imageBtn ol li img{max-width: 100%;}
+.message .picShow .button .imageBtn ol li.on{border-color: #bebebe;}
+
+.productRoll{width: 100%;height: 198px;overflow: hidden;margin-bottom: 40px;position: relative;}
+.productRoll ul{position: absolute;left: 0px;}
+.productRoll ul li{float: left;width: 260px;text-align: center;margin-left: 24px;}
+.productRoll ul li:first-child{margin-left: 0px;}
+.productRoll ul li .pic{width: 260px;height: 160px;position: relative;margin-bottom: 10px;}
+.productRoll ul li .pic a{display: none;width: 100%;height: 100%;line-height: 160px;position: absolute;left: 0px;top: 0px;z-index: 100;background: rgba(0,0,0,0.3);}
+.productRoll ul li:hover .pic a{display: block;}
+.productRoll ul li h2{overflow: hidden;clear: both;height: 28px;line-height: 28px;}
+.productRoll ul li h2 a{font-size: 12px;display: inline-block;color: #ffffff;}
+.productRoll ul li h2 a:hover{color: #e3b845;}

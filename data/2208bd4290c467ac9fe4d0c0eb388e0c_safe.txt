@@ -1,0 +1,5 @@
+127.0.0.1||/m/list.php?tid=10||select * from #@_arctype where topid=~tid~||comment detect
+127.0.0.1||/list.php?tid=2||select * from #@_arctype where topid=~p2pnumber~||comment detect
+127.0.0.1||/list.php?tid=2||select * from #@_arctype where topid=~p2pnumber~||comment detect
+127.0.0.1||/list.php?tid=2||select * from #@_arctype where topid=1||comment detect
+127.0.0.1||/list.php?tid=2||select * from #@_arctype where topid=1||comment detect

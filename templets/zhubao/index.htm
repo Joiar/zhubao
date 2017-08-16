@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{dede:global.cfg_webname/}</title>
+	<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+	<meta name="Description" content="{dede:global.cfg_description/}">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/public.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/index.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/mislider.css">
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/jquery.min.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/mislider.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/main.js" ></script>
+<body>
+<!-- 頭部 -->
+{dede:include filename="header.htm"/}
+<!-- 頭部 -->
+	<div class="banner_box">
+		<div class="banner" id="banner">	
+			<div class="bd">
+				<ul><!-- 轮播图 -->
+					{dede:sql sql="select normbody from dede_myad where clsid=1"}
+					<li>[field:normbody/]</li>
+					{/dede:sql}
+				</ul>
+			</div>
+			<div class="hd">
+				<ul><li></li><li></li><li></li></ul>
+			</div>
+			<a class="prev" href="javascript:void(0)"><img src="{dede:global.cfg_basehost/}/style/images/banner_left.png"></a>
+			<a class="next" href="javascript:void(0)"><img src="{dede:global.cfg_basehost/}/style/images/banner_right.png"></a>
+		</div>
+		<script  type="text/javascript">
+			$("#banner").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:1000});
+		</script>
+		<div class="mg">
+			<div class="position">
+				<div class="originator">
+					<h3>亚洲珠宝创始人</h3>
+					<div class="originator_img" id="originator_img">
+						<div class="bd">
+							<ul><!-- 创始人轮播图 -->
+								{dede:sql sql="select * from dede_myad where clsid=2"}
+								<li>[field:normbody/]</li>
+								{/dede:sql}
+							</ul>
+						</div>
+						<a class="prev" href="javascript:void(0)"><img src="{dede:global.cfg_basehost/}/style/images/originator_left.png"></a>
+						<a class="next" href="javascript:void(0)"><img src="{dede:global.cfg_basehost/}/style/images/originator_right.png"></a>
+					</div>
+					<div class="title">
+						<h3>琥珀知识</h3>
+						{dede:type typeid='43'}<a target="_blank" href="[field:typeurl/]" title="[field:typename/]">更多</a>{/dede:type}
+					</div>
+					<ul class="originator_items">
+						{dede:arclist row='6' titlelen='100' typeid='43'       orderby ='pubdate'}
+						<li>
+							<a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a>
+						</li>
+						{/dede:arclist}
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<script type="text/javascript">
+			$("#originator_img").slide({mainCell:".bd ul", autoPlay:true,effect:"leftLoop",delayTime:1000});
+		</script>
+	</div>
+	<div class="mg">
+		<div class="abstract">
+			<div class="title">
+				<h3>—最美好的遇见是不留遗憾的拥有</h3>
+				<p>茫茫人海，我们不经意的遇见，却注定了你我一辈子的情分</p>
+			</div>
+			<div class="txt">
+				<p class="p_first">亚洲珠宝品牌创立的初心，是为广大玉石古玩爱好收藏者提供一个鉴赏学习交流平台中心，以及包括：翡翠、和田玉、蜜蜡、绿松石、琥珀、南红、珊瑚等各种文玩木串的热点信息。</p>
+				<p>亚洲珠宝品牌创立以来一直秉承着对产品生产的高要求，高标准，不将就，力求做到更完美的心态。实践才是检验真理的唯一标准，通过无数次的交易，让消费者清楚地认识到亚洲珠宝的产品的高品质，对亚洲珠宝的认可...</p>
+				<div class="more">
+				{dede:type typeid='45'}<a target="_blank" href="[field:typeurl/]" title="[field:typename/]">>></a>{/dede:type}
+				</div>
+			</div>
+			<img class="abstract_img" src="{dede:global.cfg_basehost/}/style/images/abstract_img.png">
+		</div>
+		<div class="new_pro">
+			<div class="caption">
+				<span class="gold">新品推荐</span>
+				<span>New product recommendation</span>
+			</div>
+			<div class="pro_items">
+
+			{dede:arclist row='8' titlelen='100' typeid='1,2,3,4'   imgwidth='288' imgheight='288'  flag ='c' orderby ='pubdate' limit='0,7'}
+				<div class="pro_item on_top">
+					<a href="[field:arcurl/]"  target="_blank" class="img">
+						<img src="[field:picname/]" alt="[field:title/]">
+					</a>
+					<a href="[field:arcurl/]" target="_blank" title="[field:title/]" class="txt">[field:title/]</a>
+				</div>
+			{/dede:arclist}
+
+				
+			{dede:arclist row='8' titlelen='100' typeid='1,2,3,4'   imgwidth='288' imgheight='288'  flag ='c' orderby ='pubdate' limit='7,1'}
+				<div class="more">
+					<a href="[field:arcurl/]" target="_blank" class="more_top on_top">
+						<img src="[field:picname/]">
+						<span class="big">[field:typename/]</span>
+						<span class="small">[field:title/]</span>
+					</a>
+					<a href="[field:typeurl/]" target="_blank" class="more_bottom on_top">
+						<span class="big">浏览更多</span>
+						<span class="small">新品推荐</span>
+						<img src="/style/images/new_pro_more_icon.png">
+					</a>
+				</div>
+			{/dede:arclist}
+			</div>
+		</div>
+		<div class="discount">
+			<div class="caption">
+				<span class="gold">折扣热销</span>
+				<span>Discount sell like hot cakes</span>
+			</div>
+			<div class="pro_items">
+
+			{dede:arclist row='8' titlelen='100' typeid='1,2,3,4'   imgwidth='288' imgheight='288'  flag ='h' orderby ='pubdate' limit='0,7'}
+				<div class="pro_item on_top">
+					<a href="[field:arcurl/]"  target="_blank" class="img">
+						<img src="[field:picname/]" alt="[field:title/]">
+					</a>
+					<a href="[field:arcurl/]" target="_blank" title="[field:title/]" class="txt">[field:title/]</a>
+				</div>
+			{/dede:arclist}
+
+				
+			{dede:arclist row='8' titlelen='100' typeid='1,2,3,4'   imgwidth='288' imgheight='288'  flag ='h' orderby ='pubdate' limit='7,1'}
+				<div class="more">
+					<a href="[field:arcurl/]" target="_blank" class="more_top on_top">
+						<img src="[field:picname/]">
+						<span class="big">[field:typename/]</span>
+						<span class="small">[field:title/]</span>
+					</a>
+					<a href="[field:typeurl/]" target="_blank" class="more_bottom on_top">
+						<span class="big">浏览更多</span>
+						<span class="small">新品推荐</span>
+						<img src="/style/images/new_pro_more_icon.png">
+					</a>
+				</div>
+			{/dede:arclist}
+			</div>
+		</div>
+		<div class="collect">
+			<div class="caption">
+				<span class="gold">藏家首选</span>
+				<span>Collectors preferred</span>
+			</div>
+			<div class="collect_items">
+			{dede:arclist row='4' titlelen='100' infolen='200'  typeid='1,2,3,4'   imgwidth='288' imgheight='288'  flag ='a' orderby ='pubdate'}
+				<div class="collect_item on_top">
+					<span class="img">
+						<img src="[field:picname/]">
+						<a href="[field:arcurl/]" target="_blank" class="pos_img">
+							<img src="/style/images/collect_icon.png">
+						</a>
+					</span>
+					<p>[field:description function="cn_substr(@me,200)"/]... </p>
+				</div>
+			{/dede:arclist}
+			</div>
+		</div>
+		<div class="amber beeswax">
+			<div class="picScroll-left">
+				<div class="caption">
+					<span class="gold">琥珀蜜蜡</span>
+					<span>Amber beeswax</span>
+					<div class="hd">
+						<a class="prev"><</a>
+						<a class="next">></a>
+					</div>
+				</div>
+				<div class="bd">
+					<div class="collect_items">
+
+					{dede:arclist row='10' titlelen='100' typeid='4'   imgwidth='288' imgheight='288'  flag ='c' orderby ='pubdate'}
+						<div class="collect_item on_top">
+							<span class="img">
+								<img src="[field:picname/]">
+								<a href="[field:arcurl/]" title="[field:title/]" target="_blank" class="pos_img">
+									<img src="{dede:global.cfg_basehost/}/style/images/collect_icon.png">
+								</a>
+							</span>
+							<a href="[field:arcurl/]" title="[field:title/]" target="_blank" class="name">[field:title/]</a>
+						</div>
+					{/dede:arclist}
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".beeswax .picScroll-left").slide({mainCell:".bd .collect_items",autoPage:true,effect:"leftLoop",autoPlay:false,vis:4,trigger:"click"});
+		</script>
+		<div class="amber case">
+			<div class="picScroll-left">
+				<div class="caption">
+					<span class="gold">琥珀订制</span>
+					<span>Classic case</span>
+					<div class="hd">
+						<a class="prev">&lt;</a>
+						<a class="next">&gt;</a>
+					</div>
+				</div>
+				<div class="bd">
+					<div class="collect_items">
+					{dede:arclist row='10' titlelen='100' typeid='4'   imgwidth='288' imgheight='288'  flag ='a' orderby ='pubdate'}
+						<div class="collect_item on_top">
+							<span class="img">
+								<img src="[field:picname/]">
+								<a href="[field:arcurl/]" title="[field:title/]" target="_blank" class="pos_img">
+									<img src="{dede:global.cfg_basehost/}/style/images/collect_icon.png">
+								</a>
+							</span>
+							<a href="[field:arcurl/]" title="[field:title/]" target="_blank" class="name">[field:title/]</a>
+						</div>
+					{/dede:arclist}
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(".case .picScroll-left").slide({mainCell:".bd .collect_items",autoPage:true,effect:"leftLoop",autoPlay:false,vis:4,trigger:"click"});
+		</script>
+		<div class="honorary">
+			<div class="caption">
+				<span class="gold">荣誉证书</span>
+				<span>Honorary certificate</span>
+			</div>
+			<div class="line"></div>
+			<div class="mis-stage">
+				<ol class="mis-slider">
+				{dede:sql sql="select * from dede_myad where clsid=3"}
+					<li class="mis-slide">
+						[field:normbody/]
+					</li>
+				{/dede:sql}
+				</ol>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+$('.mis-slide>a').addClass('mis-container');
+
+
+jQuery(function ($) {
+	var slider = $('.mis-stage').miSlider({
+		stageHeight: 380,
+		slidesOnStage: false,
+		slidePosition: 'center',
+		slideStart: 'mid',
+		slideScaling: 150,
+		offsetV: -5,
+		centerV: true,
+		navButtonsOpacity: 1,
+		pause:false
+	});
+});
+</script>	
+<!-- 底部 -->
+{dede:include filename="footer.htm"/}
+<!-- 底部 -->
+</body>
+</html>
+
+
+

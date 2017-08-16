@@ -1,0 +1,35 @@
+.contains{width: 100%;color: #ffffff;}
+.contains .banner{position: relative;width: 100%;overflow: hidden;height: 278px;}
+.contains .banner img{width: 1920px;display: block;position: absolute;left: 50%;margin-left: -960px;}
+
+
+.newsList{width: 100%;}
+.newsList .current{color: #cecece;font-size: 12px;height: 50px;line-height: 50px;}
+.newsList .current a{color: #cecece;}
+.newsList .content{margin-bottom: 80px;}
+.newsList .hotNews{float: left;width: 248px;background: #511203;}
+.newsList .hotNews h2{background: #32020a;font-size: 16px;height: 50px;line-height: 50px;text-indent: 16px;}
+.newsList .hotNews ul li{height: 50px;line-height: 50px;border-top: 1px solid #5d1504;border-bottom: 1px solid #5d1504;text-indent: 16px;}
+.newsList .hotNews ul li a{color: #ffffff;}
+
+.newsList .tabulation{float: right;width: 928px;background: #32020a;padding: 48px 0 36px;}
+.newsList .tabulation ul{width: 880px;margin: 0 auto;}
+.newsList .tabulation ul li{padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px solid #3f0f03;}
+.newsList .tabulation .listul li>a{display: block;float: left;width: 200px;height: 135px;overflow: hidden;}
+.newsList .tabulation ul li .details{float: right;width: 658px;}
+.newsList .tabulation ul li .details h2{height: 20px;line-height: 20px;overflow: hidden;}
+.newsList .tabulation ul li .details h2 a{font-size: 18px;color: #ffffff;display: inline-block;}
+.newsList .tabulation ul li .details h2 a:hover{color: #e3b845;}
+.newsList .tabulation ul li .details p{line-height: 24px;margin: 10px auto;height: 72px;overflow: hidden;}
+.newsList .tabulation ul li .details>span{display: block;}
+.newsList .tabulation ul li .details>span>span{margin-right: 32px;color: #999999;}
+.page{text-align: center;padding:20px 0 80px;}
+.page ul{overflow: hidden;display: inline-block;display:*inline; zoom:1;}
+.page ul li{float: left;margin: 0 5px;}
+.page a{color: #070707;font-size: 14px;line-height: 40px;height: 40px !important;min-width: 20px !important;border-radius: 4px;padding:0 10px;text-align: center;display: block;background:#FFFFFF;}
+.page a:hover{color: #FFFFFF;background: #e3b845;}
+.page .thisclass{color: #FFFFFF;background: #e3b845;font-size: 14px;line-height: 40px;padding-bottom:0px !important;height: 40px;min-width: 20px;border-radius: 4px;padding:0 10px;text-align: center;display: block;}
+.page .prev a{width: 80px;}
+.page .next a{width: 80px;}
+.page .prev a:hover{color: #FFFFFF;background: #ead08b;}
+.page .next a:hover{color: #FFFFFF;background: #ead08b;}

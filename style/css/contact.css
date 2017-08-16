@@ -1,0 +1,21 @@
+.banner{position: relative;width: 100%;overflow: hidden;height: 278px;}
+.banner img{width: 1920px;display: block;position: absolute;left: 50%;margin-left: -960px;}
+
+.contact_us{padding:70px 0; }
+.title span{color: #FFFFFF;font-size: 24px;}
+.title .gold{color: #e3b845;margin-right: 16px;}
+.title .line{border:1px solid #e3b845;width: 120px;margin: 20px 0;}
+.title p{font-size: 16px;color: #FFFFFF;}
+
+.map{width: 1200px;height: 366px;background: #ffffff;margin: 70px 0;}
+
+.message{overflow: hidden;}
+.message ul{float: left;overflow: hidden;}
+.message li{color: #FFFFFF;font-size: 18px;padding-left: 120px;height: 36px;line-height: 36px;}
+.message .items_first{width: 440px;}
+
+.message .justify { text-align: right; width:110px;height: 36px;line-height: 36px;margin-left:-120px;float: left;}
+
+
+.BMap_Marker{background: url(../images/mark.png) no-repeat !important;}
+.BMap_cpyCtrl.anchorBL{bottom: -5px !important;}

@@ -1,0 +1,1 @@
+<li class="list-group-item"><a href="view.php?aid=[field:id]" title="[field:title/]" target='_self'>[field:title/]</a></li>

@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" content="MetInfo 5.3.16"  data-variable="http://show.metinfo.cn/muban/res013/323/,cn,112,48,3,res013" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:field.keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/img/mark.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel='stylesheet' href='{dede:global.cfg_templets_skin/}/css/metinfo.css'>
+</head>
+<body>
+<!-- 頭部 -->
+{dede:include filename="header_m.htm"/}
+<style type="text/css">
+.panel-body .blocks-2 > li{width: 100% ;}
+@media (max-width: 992px) and (min-width: 320px){
+.panel-body .blocks-2 > li{width: 50% ;}
+}
+@media (max-width: 767px) and (min-width: 320px){
+	.met-footnav .mob-masonry .masonry-item+.masonry-item{float: right;}
+	.met-footnav .mob-masonry .masonry-item+.masonry-item+.masonry-item{float: right;}
+}
+.met-footnav .mob-masonry .masonry-item+.masonry-item+.masonry-item+.masonry-item+.masonry-item{clear: both;}
+.met-footnav .mob-masonry .masonry-item+.masonry-item+.masonry-item+.masonry-item+.masonry-item+.masonry-item{clear: none;}
+</style>
+<!-- 頭部 -->
+<div class="met-position  pattern-show">
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li>
+					 {dede:field name='position'/}
+				</li>
+				
+			</ol>
+		</div>
+	</div>
+</div>
+
+<div class="page met-showproduct pagetype1 animsition">
+<div class="met-showproduct-head">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+                                <img style="width:100%" src="{dede:field.picname/}" class="img-responsive" alt="{dede:field.title/}" />
+				</div>
+			</div>
+			<div class="col-md-5 product-intro">
+				<h1>{dede:field.title/}</h1>
+			<div class="shop-product-intro grey-500">
+				<div class="padding-20 bg-grey-100 price">
+					<span id="price" class="red-600">{dede:field.jiage/}元</span>
+				</div>
+
+						<div class="form-group margin-top-15">
+							<label class="control-label font-weight-unset">作者:{dede:field.writer/}</label>
+						</div>
+						<div class="form-group margin-top-15">
+							<label class="control-label font-weight-unset">发布时间:{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</label>
+						</div>
+						<div class="form-group margin-top-15">
+							<label class="control-label font-weight-unset">浏览量:<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script></label>
+						</div>
+						<div class="form-group margin-top-15">
+							<label class="control-label font-weight-unset">价格:{dede:field.jiage/}</label>
+						</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="met-showproduct-body">
+		<div class="container">
+			<div class="row no-space">
+				<div class="col-md-9 product-content-body">
+					<div class="row">
+
+					<div class="panel product-detail">
+						<div class="panel-body">
+							<ul class="nav nav-tabs nav-tabs-line met-showproduct-navtabs affix-nav">
+								<li class="active"><a data-toggle="tab" href="#product-details" data-get="product-details">详情</a></li>
+							</ul>
+		<div class="tab-content">
+			<div class="tab-pane met-editor lazyload clearfix animation-fade active" id="product-details">
+				{dede:field.body/}
+			</div>
+
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+
+				<!--右侧开始-->
+				<div class="col-md-3">
+					<div class="row">
+						<div class="panel product-hot">
+							<div class="panel-body">
+								<h4 class="example-title">热门推荐</h4>
+								<ul class="blocks-2 blocks-sm-3 mob-masonry" data-scale='1'>
+
+{dede:sql sql="select * from #@__archives where typeid != 43 order by rand() limit 6}
+									<li>
+										<a href="view.php?aid=[field:id/]" target="_blank" class="img" title="[field:title/]">
+											<img src="[field:litpic/]" class="cover-image" style='height:200px;' alt="[field:title/]">
+										</a>
+										<a href="view.php?aid=[field:id/]" target="_blank" class="txt" title="[field:title/]">[field:title/]</a>
+										<p class='margin-bottom-0 red-600'>[field:jiage/]元</p>
+									</li>
+{/dede:sql}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--右侧结束-->
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 底部 -->
+{dede:include filename="footer_m.htm"/}
+<!-- 底部 -->
+</body>
+</html>

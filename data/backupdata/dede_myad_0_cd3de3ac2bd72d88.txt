@@ -1,0 +1,14 @@
+INSERT INTO `dede_myad` VALUES('1','1','0','lunbotu1','轮播图','0','1502369162','1504961162','<a href=\"#\"><img src=\"/style/images/banner1.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('2','1','0','lunbotu2','轮播图','0','1502369346','1504961346','<a href=\"#\"><img src=\"/style/images/banner2.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('3','1','0','lunbotu3','轮播图','0','1502369659','1504961659','<a href=\"\"><img src=\"/style/images/banner3.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('4','2','0','chuangshiren','創始人','0','1502413683','1505005683','<a href=\"\"><img src=\"/style/images/originator_img_1.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('5','2','0','chuangshiren2','創始人','0','1502413816','1505005816','<a href=\"\"><img src=\"/style/images/originator_img_2.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('6','2','0','chuangshiren3','創始人','0','1502413857','1505005857','<a href=\"\"><img src=\"/style/images/originator_img_3.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('7','2','0','chuangshiren4','創始人','0','1502413889','1505005889','<a href=\"\"><img src=\"/style/images/originator_img_4.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('8','2','0','chuangshiren5','創始人','0','1502413917','1505005917','<a href=\"\"><img src=\"/style/images/originator_img_5.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('9','2','0','chuangshiren6','創始人','0','1502413948','1505005948','<a href=\"\"><img src=\"/style/images/originator_img_6.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('10','3','0','zhengshu1','','0','1502421634','1505013634','<a href=\"\"><img src=\"/style/images/honorary_1.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('11','3','0','zhengshu2','','0','1502421676','1505013676','<a href=\"\"><img src=\"/style/images/honorary_2.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('12','3','0','zhengshu3','','0','1502421701','1505013701','<a href=\"\"><img src=\"/style/images/honorary_3.png\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('13','4','0','message1','留言','0','1502443660','1505035660','<a href=\"javascript:;\"><img src=\"/style/images/mes01.jpg\"  border=\"0\" /></a>','');
+INSERT INTO `dede_myad` VALUES('14','4','0','message','留言','0','1502443708','1505035708','<a href=\"javascript:;\"><img src=\"/style/images/mes02.jpg\"  border=\"0\" /></a>','');

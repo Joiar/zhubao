@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{dede:field.seotitle /}</title>
+	<meta name="Keywords" content="{dede:field name='keywords'/}">
+	<meta name="Description" content="{dede:field name='description'  function='html2text(@me)'/}">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/public.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_basehost/}/style/css/contact.css">
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/map.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/main.js"></script>
+</head>
+<body>
+<!-- 頭部 -->
+{dede:include filename="header.htm"/}
+<!-- 頭部 -->
+	<div class="banner">
+		<img src="{dede:global.cfg_basehost/}/style/images/pro_list_banner.png">
+	</div>
+
+	<div class="contact_us mg">
+		<div class="title">
+			<div>
+				<span class="gold">联系我们</span>
+				<span>CONTACT US</span>
+			</div>
+			<div class="line"></div>
+			<p>茫茫人海，我们不经意的遇见，却注定了你我一辈子的情分</p>
+		</div>
+		<div class="map">
+			<div style="width:1200px;height:366px;border:#ccc solid 1px;" id="dituContent"></div>
+		</div>
+		<div class="message">
+			<ul class="items_first">
+				<li>
+					<div class="justify">联　系　人 :</div>
+					<span>{dede:global.cfg_user/}</span>
+				</li>
+				<li>
+					<div class="justify">公 司 名 称 :</div>
+					<span>{dede:global.cfg_webname/}</span>
+				</li>
+				<li>
+					<div class="justify">手　　　机 :</div>
+					<span>{dede:global.cfg_mobile/}</span>
+				</li>
+				<li>
+					<div class="justify">电　　　话 :</div>
+					<span>{dede:global.cfg_tel/}</span>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="justify">邮　　　编 :</div>
+					<span>{dede:global.cfg_code/}</span>
+				</li>
+				<li>
+					<div class="justify">邮　　　箱 :</div>
+					<span>{dede:global.cfg_email/}</span>
+				</li>
+				<li>
+					<div class="justify four">联 系 地 址 :</div>
+					<span>{dede:global.cfg_dizhi/}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<!-- 底部 -->
+{dede:include filename="footer.htm"/}
+<!-- 底部 -->
+</body>
+</html>
+

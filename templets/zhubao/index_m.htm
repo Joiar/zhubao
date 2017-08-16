@@ -1,0 +1,268 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="renderer" content="webkit">
+<meta name="Keywords" content="{dede:global.cfg_keywords/}">
+<meta name="Description" content="{dede:global.cfg_description/}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="generator" content="MetInfo 5.3.16"  data-variable="http://show.metinfo.cn/muban/res013/323/,cn,10001,,10001,res013" />
+<link rel='stylesheet' href='{dede:global.cfg_templets_skin/}/css/metinfo.css'>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js" ></script>
+</head>
+<body>
+<!-- 頭部 -->
+{dede:include filename="header_m.htm"/}
+<!-- 頭部 -->
+<div class="met-banner" data-height='' style=''>
+
+{dede:sql sql="select normbody from dede_myad where clsid=1"}
+		<div class="slick-slide">
+			[field:normbody/]
+		</div>
+{/dede:sql}
+
+</div>
+
+
+
+	<div class="met-index-service met-index-body">
+		<div class="container">
+			<h2 class="invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">科技改变生活</h2>
+			<p class="desc invisible" data-plugin="appear" data-animate="fade" data-repeat="false">科技正用你无法想象的速度在改变世界，改变人们的生活</p>
+			<ul class="blocks-2 blocks-sm-2 blocks-md-4 blocks-xlg-4 " data-plugin="matchHeight">
+
+				<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+
+						<i class="icon" data-src1="{dede:global.cfg_templets_skin/}/img/whjs.png" data-src2="{dede:global.cfg_templets_skin/}/img/whjs2.png" style="background: url({dede:global.cfg_templets_skin/}/img/whjs.png);"></i>
+
+						<h3>文化精髓</h3>
+						<p>实在、实干、踏实</p>
+
+				</li>
+
+				<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<i class="icon" data-src1="{dede:global.cfg_templets_skin/}/img/zhongzhi.png" data-src2="{dede:global.cfg_templets_skin/}/img/zhongzhi2.png" style="background: url({dede:global.cfg_templets_skin/}/img/zhongzhi.png);" aria-hidden="true"></i>
+						<h3>服务宗旨</h3>
+						<p>专业、用心、耐心</p>
+
+				</li>
+
+				<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+
+						<i class="icon" data-src1="{dede:global.cfg_templets_skin/}/img/liling.png" data-src2="{dede:global.cfg_templets_skin/}/img/liling2.png" style="background: url({dede:global.cfg_templets_skin/}/img/liling.png);" aria-hidden="true"></i>
+
+						<h3>经营理念</h3>
+						<p>实在做人，诚信做事</p>
+
+				</li>
+
+				<li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+
+						<i class="icon" data-src1="{dede:global.cfg_templets_skin/}/img/xunjie.png" data-src2="{dede:global.cfg_templets_skin/}/img/xunjie2.png" style="background: url({dede:global.cfg_templets_skin/}/img/xunjie.png);" aria-hidden="true"></i>
+
+						<h3>经商戒训</h3>
+						<p>为商之道，仁信为本</p>
+
+				</li>
+
+			</ul>
+		</div>
+	</div>
+<style type="text/css">.invisible ul li{display: block !important;}</style>
+	<div class="met-index-product met-index-body">
+		<div class="container">
+			<h2 class="invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">产品展示</h2>
+			<p class="desc invisible" data-plugin="appear" data-animate="fade" data-repeat="false"></p>
+
+			<div class='invisible' data-plugin="appear" data-animate="fade" data-repeat="false">
+				<ul class="nav nav-tabs">
+
+					<!-- <li class="active">
+						<a href="#indexprolist" title="全部推荐" data-toggle="tab"  data-filter="*"><h3>全部推荐</h3></a>
+					</li> -->
+
+					<li class="active">
+						<a  href="#indexprolist" title="折扣热销" data-toggle="tab" data-num='8'  data-filter="list_112"><h3>新品推荐</h3></a>
+					</li>
+
+					<li>
+						<a href="#indexprolist" title="折扣热销" data-toggle="tab"   data-filter="list_113"><h3>折扣热销</h3></a>
+					</li>
+
+					<li>
+						<a href="#indexprolist" title="藏家首选" data-toggle="tab"  data-filter="list_114"><h3>藏家首选</h3></a>
+					</li>
+					<li>
+						<a href="#indexprolist" title="琥珀蜜蜡" data-toggle="tab"  data-filter="list_115"><h3>琥珀蜜蜡</h3></a>
+					</li>
+					<li>
+						<a href="#indexprolist" title="琥珀订制" data-toggle="tab"  data-filter="list_116"><h3>琥珀订制</h3></a>
+					</li>
+
+
+					
+
+				</ul>
+			</div>
+			<ul class="blocks-2 blocks-sm-2 blocks-md-4 blocks-xlg-4 no-space" id='indexprolist' data-scale='1'>
+			<!-- 新品推荐 -->
+{dede:arclist row='8' titlelen='100' typeid='1,2,3,4' addfields='jiage' channelid='17'   imgwidth='288' imgheight='288'  flag ='c' orderby ='pubdate'}
+		        <li data-type="list_112">
+					<div class="widget widget-shadow invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<figure class="widget-header cover">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>
+								<img class="cover-image" src="[field:picname/]" style='height:300px;' alt="[field:title/]">
+							</a>
+						</figure>
+						<h4 class="widget-title">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>[field:title/]</a>
+							<p class='margin-bottom-0 margin-top-5 red-600'>[field:jiage/]元</p>
+						</h4>
+					</div>
+					</li>
+{/dede:arclist}
+<!-- 折扣热销 -->
+{dede:arclist row='8' titlelen='100' typeid='1,2,3,4' addfields='jiage' channelid='17'  imgwidth='288' imgheight='288'  flag ='h' orderby ='pubdate'}
+		        <li class="mypro" data-type="list_113">
+					<div class="widget widget-shadow invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<figure class="widget-header cover">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>
+								<img class="cover-image" src="[field:picname/]" style='height:300px;' alt="[field:title/]">
+							</a>
+						</figure>
+						<h4 class="widget-title">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>[field:title/]</a>
+							<p class='margin-bottom-0 margin-top-5 red-600'>[field:jiage/]元</p>
+						</h4>
+					</div>
+					</li>
+{/dede:arclist}      
+
+<!-- 藏家首选 -->
+{dede:arclist row='8' titlelen='100' typeid='1,2,3,4' addfields='jiage' channelid='17'  imgwidth='288' imgheight='288'  flag ='a' orderby ='pubdate'}
+		        <li class="mypro"  data-type="list_114">
+					<div class="widget widget-shadow invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<figure class="widget-header cover">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>
+								<img class="cover-image" src="[field:picname/]" style='height:300px;' alt="[field:title/]">
+							</a>
+						</figure>
+						<h4 class="widget-title">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>[field:title/]</a>
+							<p class='margin-bottom-0 margin-top-5 red-600'>[field:jiage/]元</p>
+						</h4>
+					</div>
+					</li>
+{/dede:arclist}    
+
+
+<!-- 琥珀蜜蜡  -->
+{dede:arclist row='8' titlelen='100' typeid='4' addfields='jiage' channelid='17'  imgwidth='288' imgheight='288'  flag ='c' orderby ='pubdate'}
+		        <li class="mypro"  data-type="list_115">
+					<div class="widget widget-shadow invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<figure class="widget-header cover">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>
+								<img class="cover-image" src="[field:picname/]" style='height:300px;' alt="[field:title/]">
+							</a>
+						</figure>
+						<h4 class="widget-title">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>[field:title/]</a>
+							<p class='margin-bottom-0 margin-top-5 red-600'>[field:jiage/]元</p>
+						</h4>
+					</div>
+					</li>
+{/dede:arclist} 
+
+
+
+<!-- 琥珀订制  -->
+{dede:arclist row='8' titlelen='100' typeid='4' addfields='jiage' channelid='17'  imgwidth='288' imgheight='288'  flag ='a' orderby ='pubdate'}
+		        <li class="mypro"  data-type="list_116">
+					<div class="widget widget-shadow invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+						<figure class="widget-header cover">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>
+								<img class="cover-image" src="[field:picname/]" style='height:300px;' alt="[field:title/]">
+							</a>
+						</figure>
+						<h4 class="widget-title">
+							<a href="view.php?aid=[field:id/]" title="[field:title/]" target='_self'>[field:title/]</a>
+							<p class='margin-bottom-0 margin-top-5 red-600'>[field:jiage/]元</p>
+						</h4>
+					</div>
+					</li>
+{/dede:arclist} 
+
+			</ul>
+
+		</div>
+	</div>
+	
+	<div class="met-index-news met-index-body">
+		<div class="container">
+			<h2 class="invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">琥珀知识</h2>
+			<p class="desc invisible" data-plugin="appear" data-animate="fade" data-repeat="false"></p>
+			<ul class="blocks-2" data-scale='0.75'>
+{dede:arclist row='8' titlelen='200' typeid='43' infolen='400'      orderby ='pubdate'}
+				<li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+					<div class="media media-lg">
+						<div class="media-left">
+							<a href="view.php?aid=[field:id]" title="[field:title/]" target='_self'>
+								<img class="media-object" src="[field:picname/]" style='height:80px;' alt="[field:title/]">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">
+								<a href="view.php?aid=[field:id]" title="[field:title/]" target='_self'>
+									[field:title/]
+								</a>
+							</h4>
+								<p class="des">[field:description function="cn_substr(@me,400)"/]... </p>
+								<p class="info">
+									<span>[field:pubdate function="MyDate('m-d',@me)"/]</span>
+									<span class="margin-left-10">admin</span>
+									<span class="margin-left-10"><i class="icon wb-eye margin-right-5" aria-hidden="true"></i>[field:click/] </span>
+								</p>
+						</div>
+					</div>
+				</li>
+{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+
+	<div class="met-index-about met-index-body">
+		<div class="container">
+			<h2 class="invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">关于我们</h2>
+			<p class="desc invisible" data-plugin="appear" data-animate="fade" data-repeat="false"></p>
+			<div class="met-editor no-gallery lazyload clearfix invisible" data-plugin="appear" data-animate="slide-bottom10" data-repeat="false">
+				<p><img style="width:100%;" class="imgloading" height="200" data-original="{dede:global.cfg_basehost/}/style/images/about_us_company.png" title=""/></p><hr/>
+				<p>广州娅洲珠宝有限公司位于国际珠宝之都——广州，是全国极早专门经营天然琥珀的厂家之一。作为天然琥珀实力批发商，公司自成立以来，始终坚持以诚信为理念，以“专业、用心、耐心”为服务宗旨，以完善的售后体系，认真地服务每一位客户。</p>
+				<p>
+亚洲琥珀的文化精髓就在于一个“实”字：实在、实干、踏实。这个质朴的信念，鞭策着亚洲琥珀不断向前发展，全力打造值得信任的琥珀批发品牌。</p><p>
+一路走来，亚洲琥珀将“实在做人，诚信做事”的原则，坚决贯彻落实到每一处细节，赢得了行业内外的广泛认可。</p><p>
+目前公司主要以经营批发业务为主，旗下有近1000平加工厂、自主设计研发中心。公司所有琥珀都是经过专业采购、严格选料、精雕细琢、严格检验等一系列复杂的程序，保证每一件到客户手上的产品皆是上乘之作。</p><p>
+亚洲琥珀实力雄厚、崇尚创新，公司拥有经验丰富的品牌策划营销团队，是一家具备综合型管理和运营的现代化企业。公司设备先进，率先引进整套琥珀清洗、加工、检测设备，聘请国内外工艺精湛、水平一流的珠宝工艺师、设计师和产品技术开发设计团队。</p><p>
+亚洲琥珀已打通线上线下两栖销售模式，不仅坚持向客户提供一手的原创琥珀产品，而且以极具竞争力的市场价格，给客户让利。</p><p>
+亚洲琥珀一直致力于让客户用极少的钱买到优质的琥珀饰品。 如今，亚洲琥珀凭借优异的品质，良好的市场口碑，在全国范围内积累了一批忠实客户。于大型国际化电子商务平台上向更多国内外商家提供优质琥珀产品。</p>
+			</div>
+		</div>
+	</div>
+
+
+<!-- 底部 -->
+{dede:include filename="footer_m.htm"/}
+<!-- 底部 -->
+
+</body>
+<script type="text/javascript">
+$('.invisible').hover(function(){
+	$(this).find('i').attr('style','background:url('+$(this).find('i').attr('data-src2')+')');
+},function(){
+	$(this).find('i').attr('style','background:url('+$(this).find('i').attr('data-src1')+')');
+
+})
+</script>
+</html>

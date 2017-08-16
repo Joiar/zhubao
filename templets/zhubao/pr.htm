@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+		<meta name="Keywords" content="{dede:field.keywords/}">
+		<meta name="Description" content="{dede:field.description  function='html2text(@me)'/}">	
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="{dede:global.cfg_basehost/}/style/css/public.css" />
+		<link rel="stylesheet" href="{dede:global.cfg_basehost/}/style/css/newsDetails.css" />
+		<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="{dede:global.cfg_basehost/}/style/js/main.js" ></script>
+	</head>
+	<body>
+<!-- 頭部 -->
+{dede:include filename="header.htm"/}
+<!-- 頭部 -->
+		<div class="contains">
+			<div class="banner">
+				<img src="{dede:global.cfg_basehost/}/style/images/banner01.jpg"/>
+			</div>
+			
+			<div class="newsDetails">
+				<div class="mg">
+					<h1 class="current">当前位置： {dede:field name='position'/} <a target="_blank" href="{dede:field.arcurl/}">{dede:field.title/}详情</a></h1>
+					
+					<div class="content">
+						<div class="details">
+							<div class="title">
+								<h2>{dede:field.title/}</h2>
+								<p>作者：{dede:field.writer/}<span>发表时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>浏览量： <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script>   价格：{dede:field.jiage/}</p>
+							</div>
+							<div class="matter">
+								{dede:field.body/}
+							</div>
+							
+							<div class="bshare-custom icon-medium"><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到微信" class="bshare-weixin"></a></div>
+							
+							<div class="handover clear">
+							<p>{dede:prenext get='pre'/}</p>
+							<p>{dede:prenext get='next'/}</p>
+							</div>
+						</div>												
+					</div>
+				</div>
+			</div>
+		</div>
+
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>		
+<!-- 底部 -->
+{dede:include filename="footer.htm"/}
+<!-- 底部 -->
+	</body>
+</html>

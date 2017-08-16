@@ -1,0 +1,119 @@
+		<script language="javascript" type="text/javascript">
+
+		function IsPC() {
+	    var userAgentInfo = navigator.userAgent;
+	    var Agents = ["Android", "iPhone",
+	                "SymbianOS", "Windows Phone",
+	                "iPad", "iPod"];
+	    var flag = true;
+	    for (var v = 0; v < Agents.length; v++) {
+	        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+	            flag = false;
+	            break;
+	        }
+	    }
+	    return flag;
+		} 
+		var flag = IsPC(); //true为PC端，false为手机端
+		if(flag == true){
+
+			// window.setTimeout("window.location='pc/index.html'");
+
+		}if(flag == false){
+			var url = 
+			window.setTimeout("window.location='/m'");
+		}
+	</script>
+		<div class="header">
+			<div class="mg clear">
+				<div class="logo">
+					<span>
+						<a target="_blank" href="{dede:global.cfg_basehost/}"><img src="{dede:global.cfg_logo/}"/></a>
+					</span>					
+				</div>
+				
+				<div class="scan">
+					<img src="{dede:global.cfg_erweima/}"/>
+					<span>
+						<h2>微信<em>扫一扫</em></h2>
+						<p>随时随地查看<br />超值好琥珀</p>
+					</span>
+				</div>
+				
+				<div class="major">
+					<ul class="clear">
+						<li>
+							<img src="{dede:global.cfg_basehost/}/style/images/ha01.png"/>
+							<span>亚洲琥珀<br />诚信品牌</span>
+						</li>
+						<li>
+							<img src="{dede:global.cfg_basehost/}/style/images/ha02.png"/>
+							<span>天然珍品<br />假一赔十</span>
+						</li>
+						<li>
+							<img src="{dede:global.cfg_basehost/}/style/images/ha03.png"/>
+							<span>专业顾问<br />1对1服务</span>
+						</li>
+						<li>
+							<img src="{dede:global.cfg_basehost/}/style/images/ha04.png"/>
+							<span>顺丰保价<br />安全直邮</span>
+						</li>
+						<li>
+							<img src="{dede:global.cfg_basehost/}/style/images/ha05.png"/>
+							<span>7天<br />自由退换</span>
+						</li>
+						<li>
+							<img src="{dede:global.cfg_basehost/}/style/images/ha06.png"/>
+							<span>实物拍摄<br />所见即所得</span>
+						</li>
+					</ul>
+					
+					<div class="contact clear">
+						<span>
+							<img src="{dede:global.cfg_basehost/}/style/images/ad02.png"/>
+							<p>咨询电话：{dede:global.cfg_tel/}</p>
+						</span>
+						<span>
+							<img src="{dede:global.cfg_basehost/}/style/images/ad03.png"/>
+							<p>购买咨询微信：{dede:global.cfg_weixin/}</p>
+						</span>
+					</div>
+				</div>
+			</div>	
+
+			<div class="navHeader">
+				<div class="mg">
+					<div class="category">
+						<span>产品分类<img src="{dede:global.cfg_basehost/}/style/images/ad04.png"/></span>
+						<ul>
+						{dede:channelartlist typeid='top' row='4' cacheid='channelsonlist'}
+							<li>
+								<a target="_blank" href="{dede:field.typeurl/}">{dede:field name='typename'/}</a>
+								<ol>
+          						{dede:channel   type ='son' noself='yes'  currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+									<li><a target="_blank" href="[field:typelink/]">[field:typename/]</a></li>
+            					{/dede:channel}
+								</ol>
+							</li>
+						 {/dede:channelartlist}
+						</ul>
+					</div>
+					<div class="nav">
+						<ul class="clear">
+							<li><a target="_blank" href="{dede:global.cfg_basehost/}">{dede:global.cfg_indexname/}</a></li>
+							<li>{dede:type typeid='45'}<a target="_blank" href="[field:typeurl/]">[field:typename/]</a>{/dede:type}</li><!-- 关于我们 -->
+							<li>{dede:type typeid='43'}<a target="_blank" href="[field:typeurl/]">[field:typename/]</a>{/dede:type}</li><!-- 琥珀知识 -->
+
+							<li>{dede:type typeid='48'}<a target="_blank" href="[field:typeurl/]">[field:typename/]</a>{/dede:type}</li><!-- 产品展示 -->
+							<li>{dede:type typeid='45'}<a target="_blank" href="[field:typeurl/]#order">琥珀订制</a>{/dede:type}</li><!-- 琥珀订制 -->
+
+							<li>{dede:type typeid='44'}<a target="_blank" href="[field:typeurl/]">[field:typename/]</a>{/dede:type}</li><!-- 招商加盟 -->
+							<li>{dede:type typeid='47'}<a target="_blank" href="[field:typeurl/]">[field:typename/]</a>{/dede:type}</li><!-- 在线留言 -->
+							<li>{dede:type typeid='46'}<a target="_blank" href="[field:typeurl/]">[field:typename/]</a>{/dede:type}</li><!-- 联系我们 -->
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>

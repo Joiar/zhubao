@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("field","",40,59);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",60,86);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",485,537);
+$z[2][4]['name']="description";
+$z[2][4]['function']="html2text(@me)";
+$z[3]=Array("field","",573,595);
+$z[3][4]['name']="keywords";
+$z[4]=Array("global","",612,644);
+$z[4][4]['name']="cfg_templets_skin";
+$z[5]=Array("global","",731,763);
+$z[5][4]['name']="cfg_templets_skin";
+$z[6]=Array("include","",813,852);
+$z[6][4]['filename']="header_m.htm";
+$z[7]=Array("field","",1605,1634);
+$z[7][4]['name']="position";
+$z[8]=Array("field","",1907,1928);
+$z[8][4]['name']="picname";
+$z[9]=Array("field","",1958,1977);
+$z[9][4]['name']="title";
+$z[10]=Array("field","",2051,2070);
+$z[10][4]['name']="title";
+$z[11]=Array("field","",2206,2225);
+$z[11][4]['name']="jiage";
+$z[12]=Array("field","",2354,2374);
+$z[12][4]['name']="writer";
+$z[13]=Array("field","",2508,2564);
+$z[13][4]['name']="pubdate";
+$z[13][4]['function']="MyDate('Y-m-d H:i',@me)";
+$z[14]=Array("field","",2708,2735);
+$z[14][4]['name']="phpurl";
+$z[15]=Array("field","",2759,2782);
+$z[15][4]['name']="id";
+$z[16]=Array("field","",2787,2811);
+$z[16][4]['name']="mid";
+$z[17]=Array("field","",2994,3013);
+$z[17][4]['name']="jiage";
+$z[18]=Array("field","",3655,3673);
+$z[18][4]['name']="body";
+$z[19]=Array("sql","\n									<li>\n										<a href=\"view.php?aid=[field:id/]\" target=\"_blank\" class=\"img\" title=\"[field:title/]\">\n											<img src=\"[field:litpic/]\" class=\"cover-image\" style='height:200px;' alt=\"[field:title/]\">\n										</a>\n										<a href=\"view.php?aid=[field:id/]\" target=\"_blank\" class=\"txt\" title=\"[field:title/]\">[field:title/]</a>\n										<p class='margin-bottom-0 red-600'>[field:jiage/]元</p>\n									</li>\n",4015,4537);
+$z[19][4]['sql']="select * from #@__archives where typeid != 43 order by rand() limit 6";
+$z[20]=Array("include","",4677,4716);
+$z[20][4]['filename']="footer_m.htm";
+
+?>

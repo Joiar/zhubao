@@ -1,0 +1,23 @@
+.banner{position: relative;width: 100%;overflow: hidden;height: 278px;}
+.banner img{width: 1920px;display: block;position: absolute;left: 50%;margin-left: -960px;}
+/*pro_list*/
+.pro_list ul{overflow: hidden;width: 1216px;padding-top: 50px;}
+.pro_list li{width: 288px;height: 376px;overflow: hidden;background: #511203;text-align: center;float: left;margin: 0 16px 16px 0;}
+.pro_list .pro_img{width: 288px;height: 250px;display: block;overflow: hidden;}
+.pro_list .pro_img img{width: 100%;}
+.pro_list .txt{margin-top: 16px;padding: 0 10px;}
+.pro_list .txt h3 a{color: #FFFFFF;overflow: hidden;font-size: 18px;height: 36px;display: block;}
+.pro_list .txt p{color: #FFFFFF;overflow: hidden;font-size: 14px;height: 28px;}
+.pro_list .txt p a{color: #FFFFFF;}
+.pro_list .txt span{color: #e3b845;font-size: 18px;}
+
+.page{text-align: center;padding:20px 0 80px;}
+.page ul{overflow: hidden;display: inline-block;display:*inline; zoom:1;}
+.page ul li{float: left;margin: 0 5px;}
+.page a{color: #070707;font-size: 14px;line-height: 40px;height: 40px;min-width: 20px;border-radius: 4px;padding:0 10px;text-align: center;display: block;background:#FFFFFF;}
+.page a:hover{color: #FFFFFF;background: #e3b845;}
+.page .thisclass{color: #FFFFFF;background: #e3b845;font-size: 14px;line-height: 40px;height: 40px;min-width: 20px;border-radius: 4px;padding:0 10px;text-align: center;display: block;}
+.page .prev a{width: 80px;}
+.page .next a{width: 80px;}
+.page .prev a:hover{color: #FFFFFF;background: #ead08b;}
+.page .next a:hover{color: #FFFFFF;background: #ead08b;}
